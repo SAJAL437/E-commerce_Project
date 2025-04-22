@@ -38,10 +38,10 @@ const Register = () => {
     console.log("User Data:", userData);
 
     try {
-      const success = await dispatch(register(userData)); 
+      const success = await dispatch(register(userData));
       if (success) {
         console.log("Registration successful");
-        navigate("/dashboard"); 
+        navigate("/dashboard");
       }
     } catch (error) {
       console.error("Registration failed:", error);

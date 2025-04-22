@@ -32,14 +32,8 @@ const CustomerRouters = () => {
 
         <Route path="/account/order/:orderId" element={<OrderDetails />} />
 
-
         <Route path="/payment/:orderId" element={<PaymentSucess />} />
-
       </Routes>
-
-      
-
-
 
       <div>
         <Footer />

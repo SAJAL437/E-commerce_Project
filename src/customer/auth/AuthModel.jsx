@@ -20,6 +20,7 @@ const style = {
 const AuthModel = ({ handleClose, open }) => {
   const location = useLocation();
   const { auth } = useSelector((store) => store);
+  
   useEffect(() => {
     if (auth.user) handleClose();
   }, [auth.user]);
